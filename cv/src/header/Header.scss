@@ -1,0 +1,86 @@
+@use '../helpers/vars.scss' as vars;
+
+header {
+  width:100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../../public/main.jpg);
+  background-size: cover;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    padding: 100px;
+
+    background-color: rgba(white, 0.5);
+    font-family: vars.$code-font;
+
+    * {
+      margin-bottom: 10px;
+    }
+
+    .accent {
+      color: vars.$accent-color;
+    }
+  }
+
+  .down {
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+
+    background-image: url(../../public/icons/down.png);
+    background-size: cover;
+
+    animation: bounce 1s ease infinite;
+    transition: bounce 0.8s;
+
+    &:hover {
+      animation: none;
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+}
+
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 42px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
