@@ -4,11 +4,13 @@ main {
   min-height: calc(100vh - 70px);
   max-width: 1000px;
 
+  padding: 10px 50px;
+
   align-self: center;
 
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: max-content;
+  grid-template-rows: auto;
   gap: 30px;
   grid-template-areas: 
   'avatar about'
@@ -37,5 +39,18 @@ main {
       height: 3px;
       background-color: vars.$accent-color;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-areas: 
+    'avatar contacts'
+    'about about'
+    'langs skills'
+    'education education'
+    'projects projects';
+
+    font-size: 18px;
   }
 }

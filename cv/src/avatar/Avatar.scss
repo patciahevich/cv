@@ -10,3 +10,18 @@
 
   background-color: vars.$accent-color;
 }
+
+@media screen and (max-width: 800px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .avatar {
+    width: 100%;
+  }
+}

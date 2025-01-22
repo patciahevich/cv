@@ -32,5 +32,10 @@
       color: vars.$accent-color;
     }
   }
+}
 
+@media screen and (max-width: 800px) {
+  .education .education-item{
+    margin-left: 50px;
+  }
 }
