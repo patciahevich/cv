@@ -1,0 +1,41 @@
+@use '../helpers/vars.scss' as vars;
+
+main {
+  min-height: calc(100vh - 70px);
+  max-width: 1000px;
+
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: max-content;
+  gap: 30px;
+  grid-template-areas: 
+  'avatar about'
+  'contacts skills'
+  'langs education'
+  'projects projects';
+
+  font-size: 20px;
+  font-family: vars.$main-font;
+
+  h3 {
+    margin-bottom: 10px;
+    
+    position: relative;
+    font-size: 38px;
+  
+    &::after {
+      content: '';
+
+      position: absolute;
+      bottom: -5px;
+
+      display: block;
+      
+      width:  100px;
+      height: 3px;
+      background-color: vars.$accent-color;
+    }
+  }
+}

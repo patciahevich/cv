@@ -1,0 +1,57 @@
+@use '../helpers/vars.scss' as vars;
+
+.projects {
+  grid-area: projects;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects-item {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  align-items: flex-end;
+
+  transition: all 0.4s;
+  &.odd {
+    align-items: flex-start;
+    p {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  p {
+    height: 30%;
+    width: 100%;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    background-color: rgba(vars.$accent-color, 0.3);
+    font-size: 24px;
+    font-weight: 600;
+
+    transition: all 0.4s;
+  }
+  &:hover {
+    transform: scale(1.04);
+    p {
+    background-color: rgba(vars.$accent-color, 0.8);
+    }
+  }
+
+  border-radius: 10px;
+
+
+}

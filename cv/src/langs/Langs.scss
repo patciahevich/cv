@@ -1,0 +1,32 @@
+.langs {
+  grid-area: langs;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .lang-item {
+    display: flex;
+    gap: 20px;
+
+    .lang-icon {
+      width: 20px;
+      height: 20px;
+
+      background-size: cover;
+    }
+  }
+}
+
+#russian {
+  background-image: url(../../public/icons/russian.png);
+}
+#belorussian {
+  background-image: url(../../public/icons/belarus.png);
+}
+#english {
+  background-image: url(../../public/icons/english.png);
+}
+#polish {
+  background-image: url(../../public/icons/polish.png);
+}

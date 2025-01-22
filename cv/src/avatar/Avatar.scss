@@ -1,0 +1,12 @@
+@use '../helpers/vars.scss' as vars;
+
+.avatar {
+  grid-area: avatar;
+
+  width: 300px;
+  height: 300px;
+
+  margin-top: 40px;
+
+  background-color: vars.$accent-color;
+}

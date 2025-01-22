@@ -1,5 +1,11 @@
 @use './helpers/vars.scss' as vars;
-.app {
-  position: relative;
+#root {
+  display: flex;
+  flex-direction: column;
+
   font-family: vars.$main-font;
+}
+
+.accent {
+  color: vars.$accent-color;
 }

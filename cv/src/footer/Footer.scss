@@ -1,0 +1,30 @@
+@use '../helpers/vars.scss' as vars;
+
+footer {
+  height: 60px;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-weight: 600;
+  
+  background-image: url(../../public/main.jpg);
+  background-size: cover; 
+  * { 
+    color: white;
+  }
+
+  a {
+    font-family: vars.$hand-font;
+    transition: all 0.4s;
+    &:hover {
+      color: vars.$accent-color
+    }
+  } 
+  p {
+    font-family: vars.$code-font;
+  }
+}

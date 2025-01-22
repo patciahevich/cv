@@ -1,0 +1,36 @@
+@use '../helpers/vars.scss' as vars;
+
+.education {
+  grid-area: education;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-item {
+  position: relative;
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: -50px;
+    top: calc(50% - 20px);
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background-color: vars.$accent-color;
+  }
+
+  a {
+    display: block;
+    font-family: vars.$hand-font;
+    transition: all 0.4s;
+    &:hover {
+      color: vars.$accent-color;
+    }
+  }
+
+}

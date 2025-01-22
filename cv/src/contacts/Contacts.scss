@@ -1,0 +1,49 @@
+@use '../helpers/vars.scss' as vars;
+.contacts {
+  grid-area: contacts;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  span {
+    transition: all 0.4s;
+  }
+
+  .contacts-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-size: cover;
+  }
+  &:hover .contacts-text {
+    font-weight: 600;
+    color: vars.$accent-color;
+  }
+  &:hover .contacts-icon {
+   transform: scale(1.1);
+  }
+}
+
+#address {
+  background-image: url(../../public/icons/address.png);
+}
+#mail {
+  background-image: url(../../public/icons/mail.png);
+}
+#telegram {
+  background-image: url(../../public/icons/telegram.png);
+}
+#linkedin {
+  background-image: url(../../public/icons/linkedin.png);
+}
+#github {
+  background-image: url(../../public/icons/github.png);
+}
