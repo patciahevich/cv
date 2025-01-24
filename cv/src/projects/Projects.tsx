@@ -71,7 +71,13 @@ function Projects () {
       <div className='projects-wrapper'>
         {
           projects.map((item, index) => (
-            <a  className={index % 2 === 0 ? 'projects-item' : 'projects-item odd'} style={{ backgroundImage: `url(${item.url})`, backgroundSize: 'cover' }}  href={item.deploy} target='_blank' rel="noreferrer">
+            <a  
+            className={index % 2 === 0 ? 'projects-item' : 'projects-item odd'} 
+            style={{ backgroundImage: `url(${item.url})`, backgroundSize: 'cover' }} 
+            href={item.deploy} target='_blank' 
+            rel="noreferrer"
+            key={index}
+            >
               <p className='project-link' >{item.name}</p>
             </a>
           )

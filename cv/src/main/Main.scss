@@ -4,7 +4,7 @@ main {
   min-height: calc(100vh - 70px);
   max-width: 1000px;
 
-  padding: 10px 50px;
+  padding: 20px 50px;
 
   align-self: center;
 
@@ -52,5 +52,28 @@ main {
     'projects projects';
 
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'avatar'
+    'contacts'
+    'about'
+    'langs'
+    'skills'
+    'education'
+    'projects';
+
+    font-size: 18px;
+  }
+}
+
+@media  screen and (max-width:350px) {
+  main {
+    margin: 0 30px;
+    padding: 20px;
   }
 }

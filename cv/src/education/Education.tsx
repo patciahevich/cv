@@ -28,8 +28,8 @@ function Education() {
     <section id='education' className='education'>
       <h3> Education</h3>
       {
-        education.map(item => (
-          <div className='education-item'>
+        education.map((item, index) => (
+          <div className='education-item' key={index}>
             <p>{item.school} / {item.course}</p>
             {
               item.certificate ? 

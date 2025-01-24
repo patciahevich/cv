@@ -12,8 +12,8 @@ function Skills() {
       <h3> Skills</h3>
       <ul>
         {
-          skills.map(skill => (
-            <li>{skill}</li>
+          skills.map((item, index) => (
+            <li key={index}>{item}</li>
           ))
         }
       </ul>

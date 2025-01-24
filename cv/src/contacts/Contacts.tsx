@@ -34,8 +34,8 @@ function Contacts() {
     <section id='contacts' className='contacts'>
       <h3> Contacts </h3>
       {
-        contacts.map(item => (
-          <a className='contacts-item' href={item.link} target='_blank' rel="noreferrer">
+        contacts.map((item, index) => (
+          <a className='contacts-item' href={item.link} target='_blank' rel="noreferrer" key={index}>
             <span id={item.id} className='contacts-icon'/>
             <span className='contacts-text'>{item.text}</span>
           </a>

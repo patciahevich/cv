@@ -26,8 +26,8 @@ function Langs() {
     <section className='langs'>
       <h3> Languages </h3>
       {
-        langs.map(item => (
-          <p className='lang-item'>
+        langs.map((item, index) => (
+          <p className='lang-item' key={index}>
             <span id={item.id} className='lang-icon'/>
             <span className='lang-text'>{`${item.id} ( ${item.level} )`}</span>
           </p>
